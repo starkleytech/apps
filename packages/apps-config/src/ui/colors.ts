@@ -95,6 +95,7 @@ const nodeNFTMart = '#307182';
 const nodeNodle = '#1ab394';
 const nodeParami = '#ee06e2';
 const nodePolkadex = '#7C30DD';
+const nodePolymesh = '#1348e4';
 const nodePrism = 'linear-gradient(45deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)';
 const nodeRealis = 'linear-gradient(45deg, #E8AAC9 0%, #C4D9E7 50%, #EFD6E0 100%)';
 const nodeRiochain = '#1A3BB3';
@@ -138,10 +139,12 @@ export const chainColors: Record<string, any> = [
   ['Galital', chainGalital],
   ['Galois', chainGalois],
   ['GamePower Network', chainGamePower],
+  ['Halongbay PC1', chainPolkaFoundry],
   ['hanonycash', chainHanonycash],
   ['HydraDX Hydrate', chainHydrate],
   ['HydraDX Snakenet', chainSnakenet],
   ['HydraDX Snakenet Gen2', chainSnakenet],
+  ['HydraDX Snakenet Gen3', chainSnakenet],
   ['Idavoll', chainIdavoll],
   ['IntegriTEE PC1', chainIntegritee],
   ['IpseTestnet', chainIpse],
@@ -169,6 +172,7 @@ export const chainColors: Record<string, any> = [
   ['Parami PC2', chainParami],
   ['Phala PC1', chainPhala],
   ['Phala PoC 4', chainPhala],
+  ['PHOENIX', chainPhoenix],
   ['Plasm', chainPlasm],
   ['Plasm PC2', chainPlasm],
   ['PolkaBTC', chainPolkabtc],
@@ -178,7 +182,6 @@ export const chainColors: Record<string, any> = [
   ['Polkadot', chainPolkadot],
   ['Prism Testnet', chainPrism],
   ['Prism PC1', chainPrism],
-  ['Halongbay Testnet', chainPolkaFoundry],
   ['ReAlis Network', nodeRealis],
   ['Rococo', chainRocco],
   ['RioChain CC-1', chainRiochain],
@@ -191,15 +194,15 @@ export const chainColors: Record<string, any> = [
   ['Trick', chainRoccoTrick],
   ['TrustBase PC1', chainTrustBase],
   ['uni arts staging network', chainUniarts],
+  ['UniArts Mainnet', chainUniarts],
   ['Unique Node', chainUnique],
+  ['UNIT', chainUnitv],
   ['VLN PC', chainVln],
   ['Web3games ', chainWeb3games],
   ['Westend', chainWestend],
   ['Westlake', chainWestlake],
   ['Zenlink PC1', chainZenlink],
-  ['ZERO.IO', chainZero],
-  ['PHOENIX', chainPhoenix],
-  ['UNIT', chainUnitv]
+  ['ZERO.IO', chainZero]
 ].reduce((colors, [chain, color]): Record<string, any> => ({
   ...colors,
   [chain.toLowerCase()]: color
@@ -234,6 +237,7 @@ export const nodeColors: Record<string, any> = [
   ['Parami Collator', nodeParami],
   ['Patract Node', nodeJupiter],
   ['Polkadex Node', nodePolkadex],
+  ['Polymesh Node', nodePolymesh],
   ['Prism Node', nodePrism],
   ['Prism Collator', nodePrism],
   ['ReAlis Network', nodeRealis],
@@ -242,20 +246,18 @@ export const nodeColors: Record<string, any> = [
   ['SORA', nodeSora],
   ['Stafi node', nodeStafi],
   ['Statemint Collator', nodeStatemint],
+  ['SubDAO Collator', nodeSubDAO],
   ['subsocial node', nodeSubsocial],
   ['subzero node', nodeZero],
   ['Ternoa Node', nodeTernoa],
   ['uni arts node', nodeUniarts],
+  ['UniArts Node', nodeUniarts],
   ['Unique Node', nodeUnique],
   ['Web3games', nodeWeb3games],
   ['Westlake', nodeWestlake],
   ['Zeitgeist Node', nodeZeitgeist],
   ['Zeitgeist Collator', nodeZeitgeist],
-  ['Zenlink Collator', nodeZenlink],
-  ['SubDAO Collator', nodeSubDAO]
-  // ['node template', emptyColor],
-  // ['parity polkadot', emptyColor],
-  // ['substrate node', emptyColor]
+  ['Zenlink Collator', nodeZenlink]
 ].reduce((colors, [node, color]): Record<string, any> => ({
   ...colors,
   [node.toLowerCase().replace(/-/g, ' ')]: color
